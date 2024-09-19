@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" class="*:m-0 *:box-border *:p-0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Page</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+        <script src="js/darkmode.js" defer></script>
+    </head>
+    <body
+        class="flex h-screen items-center justify-center bg-cover bg-center bg-no-repeat text-white transition-all   duration-500 bg-darkmode" style="background-image: url('img/darkmode.jpg')">
+        <div
+            class="relative max-h-95-p content-center rounded-2xl border border-solid border-white/[.5] bg-transparent shadow-2xl backdrop-blur-md sm:h-75-p sm:min-h-full sm-l:min-h-90-p lg:w-65-p xl:w-45-p"
+        >
+            <div
+                id="social_media"
+                class="fixed left-50-p top-5 flex h-14 -translate-x-50-p items-center justify-around rounded-full border border-white/[.5] sm:w-80-p sm-l:w-65-p lg:w-40-p"
+            >
+                <a
+                    href="https://www.tiktok.com/@georgedits.4.u"
+                    target="_blank"
+                >
+                    <i
+                        class="bx bxl-tiktok fixed -translate-x-50-p -translate-y-50-p text-4xl transition-all duration-500 hover:text-slate-700 hover:scale-125"
+                    ></i>
+                </a>
+                <a
+                    href="https://www.instagram.com/georgedash09"
+                    target="_blank"
+                >
+                    <i
+                        class="bx bxl-instagram absolute -translate-x-50-p -translate-y-50-p text-4xl transition-all duration-500 hover:text-[#ee2a7b] hover:scale-125"
+                    ></i>
+                </a>
+                <a
+                    href="https://www.youtube.com/@georgecraft225"
+                    target="_blank"
+                >
+                    <i
+                        class="bx bxl-youtube absolute -translate-x-50-p -translate-y-50-p text-4xl transition-all duration-500 hover:scale-125 hover:text-red-500"
+                    ></i>
+                </a>
+                <a href="https://github.com/GeorgeDash" target="_blank">
+                    <i
+                        class="bx bxl-github absolute -translate-x-50-p -translate-y-50-p text-4xl transition-all duration-500 hover:scale-125 hover:text-purple-600"
+                    ></i>
+                </a>
+            </div>
+            <button id="theme_switch" class="absolute lg:right-6 top-12 flex h-14 w-14 -translate-y-50-p items-center justify-center rounded-full border border-solid border-white/[.5] text-2xl sm-l:right-2">
+                <i class="bx bxs-moon moon_icon cursor-pointer"></i>
+                <i class="bx bxs-sun sun_icon cursor-pointer"></i>
+            </button>
+            <h1
+                class="text flex justify-center text-4xl font-semibold selection:bg-none dark:text-slate-600"
+            >
+                Login
+            </h1>
+            <input
+                type="text"
+                name="email"
+                placeholder="Email"
+                id="email"
+                class="relative left-50-p mt-8 h-12 w-90-p -translate-x-50-p rounded-2xl border border-solid border-white/[.5] bg-transparent pl-5 text-sm outline-none transition-all duration-500 placeholder:font-semibold placeholder:text-white focus:w-95-p"
+            />
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                id="password"
+                class="relative left-50-p mt-4 h-12 w-90-p -translate-x-50-p rounded-2xl border border-solid border-white/[.5] bg-transparent pl-5 text-sm outline-none transition-all duration-500 placeholder:font-semibold placeholder:text-white focus:w-95-p"
+            />
+            <div class="remember_forgot mt-15-r flex w-full justify-between">
+                <div class="remember_me sm:ml-3 sm-m:ml-10">
+                    <input
+                        type="checkbox"
+                        name="remember_me"
+                        id="remember_me"
+                        class="mr-2 border-none accent-white outline-none"
+                    />
+                    <label for="remember_me">Remember me</label>
+                </div>
+                <a
+                    href="#"
+                    class="relative font-semibold outline-none after:absolute after:bottom-0 after:left-0 after:h-1-p after:w-0 after:bg-white after:transition-width after:duration-375 after:content-[''] hover:after:w-full sm:mr-3 sm-m:mr-10"
+                    >Forgot password?</a
+                >
+            </div>
+            <button
+                id="login_btn"
+                class="absolute left-50-p top-80-p flex h-10 w-24 -translate-x-50-p flex-row items-center justify-center rounded-2xl border border-white/[.5] font-semibold transition-colors duration-500 hover:bg-white/[.5] hover:text-white"
+            >
+                Login
+            </button>
+            <div
+                class="register fixed top-95-p flex w-full justify-center text-lg"
+            >
+                <p>
+                    Don't have an account?
+                    <a
+                        href="#"
+                        class="relative font-semibold outline-none after:absolute after:bottom-0 after:left-0 after:h-1-p after:w-0 after:bg-white after:transition-width after:duration-375 after:content-[''] hover:after:w-full"
+                        >Register</a
+                    >
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

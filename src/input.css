@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'Onest';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+    }
+}
+
+*{
+    @apply transition-colors duration-375;
+}
+
+.display-none{
+    display: none !important;
+}
