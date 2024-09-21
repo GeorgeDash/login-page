@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 
 *{
-    @apply transition-colors duration-375;
     font-family: 'Onest', sans-serif;
 }
 

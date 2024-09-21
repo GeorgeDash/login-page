@@ -12,16 +12,24 @@
         <script src="js/darkmode.js" defer></script>
     </head>
     <body
-        class="flex h-screen items-center justify-center bg-cover bg-center bg-no-repeat text-white transition-all duration-500 dark:bg-darkmode bg-lightmode">
+        class="flex h-screen items-center justify-center bg-lightmode bg-cover bg-center bg-no-repeat text-white transition-all duration-500 dark:bg-darkmode"
+    >
         <div
-            class="relative max-h-95-p content-center rounded-2xl sm-l:border border-solid dark:border-white/[.5] border-slate-600/[.5] bg-transparent shadow-2xl backdrop-blur-md sm:h-75-p sm:min-h-full sm-l:min-h-90-p sm:w-full sm-l:w-90-p md:w-75-p lg:w-65-p xl:w-45-p"
+            class="relative max-h-95-p content-center rounded-2xl border-solid border-slate-600/[.5] bg-transparent shadow-2xl backdrop-blur-md dark:border-white/[.5] sm:h-75-p sm:min-h-full sm:w-full sm-l:min-h-90-p sm-l:w-90-p sm-l:border md:w-75-p lg:w-65-p xl:w-45-p"
         >
-            <button id="theme_switch" class="sm:hidden absolute lg:right-6 top-12 sm-l:flex h-14 w-14 -translate-y-50-p items-center justify-center rounded-full border border-solid dark:border-white/[.5] border-slate-600/[.5] text-2xl sm-l:right-2">
-                <i class="bx bxs-moon moon_icon cursor-pointer text-slate-600 transition-all duration-500"></i>
-                <i class="bx bxs-sun sun_icon cursor-pointer transition-all duration-500"></i>
+            <button
+                id="theme_switch"
+                class="absolute top-12 h-14 w-14 -translate-y-50-p items-center justify-center rounded-full border border-solid border-slate-600/[.5] text-2xl transition-all duration-500 dark:border-white/[.5] sm:hidden sm-l:right-2 sm-l:flex lg:right-6"
+            >
+                <i
+                    class="bx bxs-moon moon_icon cursor-pointer text-slate-600 transition-all duration-500"
+                ></i>
+                <i
+                    class="bx bxs-sun sun_icon cursor-pointer transition-all duration-500"
+                ></i>
             </button>
             <h1
-                class="text flex justify-center text-4xl font-semibold selection:bg-none text-slate-600 dark:text-white"
+                class="text flex justify-center text-4xl font-semibold text-slate-600 transition-colors duration-500 selection:bg-none dark:text-white"
             >
                 Login
             </h1>
@@ -30,14 +38,14 @@
                 name="email"
                 placeholder="Email"
                 id="email"
-                class="relative left-50-p mt-8 h-12 w-90-p -translate-x-50-p rounded-2xl border border-solid dark:border-white/[.5] border-slate-600/[.5] bg-transparent pl-5 text-sm outline-none transition-all duration-500 placeholder:font-semibold dark:placeholder:text-white placeholder:text-slate-600 focus:w-95-p text-slate-600 dark:text-white placeholder:transition-colors placeholder:duration-500"
+                class="relative left-50-p mt-8 h-12 w-90-p -translate-x-50-p rounded-2xl border border-solid border-slate-600/[.5] bg-transparent pl-5 text-sm text-slate-600 outline-none transition-all duration-500 placeholder:font-semibold placeholder:text-slate-600 placeholder:transition-colors placeholder:duration-500 focus:w-95-p dark:border-white/[.5] dark:text-white dark:placeholder:text-white"
             />
             <input
                 type="password"
                 name="password"
                 placeholder="Password"
                 id="password"
-                class="relative left-50-p mt-4 h-12 w-90-p -translate-x-50-p rounded-2xl border border-solid dark:border-white/[.5] border-slate-600/[.5] bg-transparent pl-5 text-sm outline-none transition-all duration-500 placeholder:font-semibold dark:placeholder:text-white placeholder:text-slate-600 focus:w-95-p text-slate-600 dark:text-white placeholder:transition-colors placeholder:duration-500"
+                class="relative left-50-p mt-4 h-12 w-90-p -translate-x-50-p rounded-2xl border border-solid border-slate-600/[.5] bg-transparent pl-5 text-sm text-slate-600 outline-none transition-all duration-500 placeholder:font-semibold placeholder:text-slate-600 placeholder:transition-colors placeholder:duration-500 focus:w-95-p dark:border-white/[.5] dark:text-white dark:placeholder:text-white"
             />
             <div class="remember_forgot mt-15-r flex w-full justify-between">
                 <div class="remember_me sm:ml-3 sm-m:ml-10">
@@ -45,30 +53,36 @@
                         type="checkbox"
                         name="remember_me"
                         id="remember_me"
-                        class="mr-2 border-none dark:accent-white accent-slate-600 outline-none"
+                        class="mr-2 border-none accent-slate-600 outline-none dark:accent-white"
                     />
-                    <label for="remember_me" class="text-slate-600 dark:text-white">Remember me</label>
+                    <label
+                        for="remember_me"
+                        class="text-slate-600 transition-colors duration-500 dark:text-white"
+                        >Remember me</label
+                    >
                 </div>
                 <a
                     href="#"
-                    class="relative font-semibold outline-none after:absolute after:bottom-0 after:left-0 after:h-1-p after:w-0 dark:after:bg-white after:bg-slate-600 after:transition-width after:duration-375 after:content-[''] hover:after:w-full sm:mr-3 sm-m:mr-10 text-slate-600 dark:text-white"
+                    class="relative font-semibold text-slate-600 outline-none transition-colors duration-500 after:absolute after:bottom-0 after:left-0 after:h-1-p after:w-0 after:bg-slate-600 after:transition-width after:content-[''] hover:after:w-full dark:text-white dark:after:bg-white sm:mr-3 sm-m:mr-10"
                     >Forgot password?</a
                 >
             </div>
             <button
                 id="login_btn"
-                class="absolute left-50-p top-80-p flex h-10 w-24 -translate-x-50-p flex-row items-center justify-center rounded-2xl border border-white/[.5] font-semibold transition-colors duration-500 hover:bg-white/[.5] hover:text-white text-slate-500 dark:text-white"
+                class="absolute left-50-p top-80-p flex h-10 w-24 -translate-x-50-p flex-row items-center justify-center rounded-2xl border border-slate-600/[.5] font-semibold text-slate-500 transition-colors duration-500 hover:bg-white/[.5] hover:text-white dark:border-white/[.5] dark:text-white"
             >
                 Login
             </button>
             <div
                 class="register fixed top-95-p flex w-full justify-center text-lg"
             >
-                <p class="text-slate-600 dark:text-white">
+                <p
+                    class="text-slate-600 transition-colors duration-500 dark:text-white"
+                >
                     Don't have an account?
                     <a
                         href="#"
-                        class="relative font-semibold outline-none after:absolute after:bottom-0 after:left-0 after:h-1-p after:w-0 dark:after:bg-white after:bg-slate-600 after:transition-width after:duration-375 after:content-[''] hover:after:w-full"
+                        class="relative font-semibold outline-none after:absolute after:bottom-0 after:left-0 after:h-1-p after:w-0 after:bg-slate-600 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-white"
                         >Sign up</a
                     >
                 </p>
