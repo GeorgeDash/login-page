@@ -12,6 +12,10 @@ module.exports = {
       fontFamily: {
         "sans": ['"Onest"']
       },
+      backgroundImage: {
+        "lightmode": "url(../img/lightmode.jpg)",
+        "darkmode": "url(../img/darkmode.jpg)",
+      },
       spacing: {
         "15-r": "3.75rem",
         "46-p": "46%",
