@@ -8,3 +8,10 @@ I want give credits to everyone that I got inspired from:
   * the login page design itself - https://www.youtube.com/watch?v=hlwlM4a5rxg.
 
 Thanks to everyone mentioned above and I hope you enjoy my login page! 😄
+
+* **Preview**:
+* *Light mode*:
+* (build/screenshots/lightmode.png)
+
+* *Dark mode*:
+* (build/screenshots/darkmode.png)
