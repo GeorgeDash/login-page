@@ -11,7 +11,7 @@ Thanks to everyone mentioned above and I hope you enjoy my login page! 😄
 
 * **Preview**:
 * *Light mode*:
-* (build/screenshots/lightmode.png)
+* 	(/build/screenshots/lightmode.png)
 
 * *Dark mode*:
-* (build/screenshots/darkmode.png)
+* (/build/screenshots/darkmode.png)
