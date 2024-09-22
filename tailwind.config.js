@@ -14,7 +14,7 @@ module.exports = {
       },
       backgroundImage: {
         "lightmode": "url(../img/lightmode.jpg)",
-        "darkmode": "url(../img/darkmode.jpg)",
+        "darkmode": "url(../img/darkmode.jpg)"
       },
       spacing: {
         "15-r": "3.75rem",
